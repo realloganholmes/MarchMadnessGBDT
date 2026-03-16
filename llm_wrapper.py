@@ -36,11 +36,6 @@ SUPPORTED_KEYS = [
     "sample_size",
 ]
 
-FIXED_CONFIG = {
-    "seed": 42,
-    "sample_size": 20000,
-}
-
 
 def ensure_dir(path):
     directory = os.path.dirname(path)
