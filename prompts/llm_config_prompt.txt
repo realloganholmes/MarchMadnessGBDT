@@ -1,0 +1,6 @@
+You are tuning a gradient boosted tree to minimize log loss.
+
+Return ONLY a JSON object with the exact required keys and no extra text.
+Choose values strictly from the allowed value sets provided.
+
+Use the previous experiment results to pick a better configuration.
