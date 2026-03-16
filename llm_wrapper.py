@@ -22,6 +22,7 @@ LLM_RUNS_FILE = "results/llm_runs.jsonl"
 LOGGER = logging.getLogger(__name__)
 
 SUPPORTED_KEYS = [
+    "seed",
     "use_shooting",
     "use_free_throws",
     "use_rebounding",
@@ -32,6 +33,7 @@ SUPPORTED_KEYS = [
     "n_estimators",
     "learning_rate",
     "max_depth",
+    "sample_size",
 ]
 
 FIXED_CONFIG = {
