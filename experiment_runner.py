@@ -46,11 +46,9 @@ def run_config(config):
 if __name__ == "__main__":
 
     config = {
-        "seed": 42,
         "n_estimators": 100,
         "learning_rate": 0.05,
         "max_depth": 3,
-        "sample_size": 20000,
         "use_shooting": True,
         "use_free_throws": True,
         "use_rebounding": True,

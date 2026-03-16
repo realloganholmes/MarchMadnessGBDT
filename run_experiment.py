@@ -166,7 +166,6 @@ if __name__ == "__main__":
 
     config = {
 
-        "seed": 42,
 
         # feature families
         "use_shooting": True,
@@ -181,9 +180,6 @@ if __name__ == "__main__":
         "n_estimators": 100,
         "learning_rate": 0.05,
         "max_depth": 3,
-
-        # dataset size
-        "sample_size": 15000
     }
 
     print(run_experiment(config))
