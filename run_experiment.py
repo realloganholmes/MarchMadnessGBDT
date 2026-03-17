@@ -121,8 +121,8 @@ def run_experiment(config):
     # Train / Test split
     # -------------------------
 
-    train_df = df[df["Season"] < 2010]
-    test_df = df[df["Season"] >= 2010]
+    train_df = df[df["Season"] < 2019]
+    test_df = df[df["Season"] >= 2019]
 
     X_train = train_df[feature_cols].values
     y_train = train_df["Team1Win"].values
@@ -183,11 +183,11 @@ if __name__ == "__main__":
         "use_win_history": False,
 
         # model params
-        "n_estimators": 100,
+        "n_estimators": 200,
         "learning_rate": 0.01,
-        "max_depth": 3,
+        "max_depth": 5,
         "seed": 3124,
-        "sample_size": 10000
+        "sample_size": 80000
     }
 
     print(run_experiment(config))

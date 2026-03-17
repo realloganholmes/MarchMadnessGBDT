@@ -36,7 +36,7 @@ SUPPORTED_KEYS = [
 
 FIXED_CONFIG = {
     "seed": 42,
-    "sample_size": 20000,
+    "sample_size": 1000,
 }
 
 

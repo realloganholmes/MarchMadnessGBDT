@@ -9,8 +9,10 @@
       "use_playmaking": true,
       "use_win_history": true,
       "n_estimators": 200,
-      "learning_rate": 0.01,
-      "max_depth": 3
+      "learning_rate": 0.03,
+      "max_depth": 3,
+      "seed": 42,
+      "sample_size": 20000
     },
     "log_loss": 23.115070431146748
   },
@@ -24,196 +26,29 @@
       "use_playmaking": true,
       "use_win_history": true,
       "n_estimators": 200,
-      "learning_rate": 0.03,
-      "max_depth": 4
-    },
-    "log_loss": 23.115070431146748
-  },
-  {
-    "config": {
-      "use_shooting": true,
-      "use_free_throws": true,
-      "use_rebounding": true,
-      "use_turnovers": true,
-      "use_defense": true,
-      "use_playmaking": true,
-      "use_win_history": true,
-      "n_estimators": 150,
-      "learning_rate": 0.05,
-      "max_depth": 3
-    },
-    "log_loss": 23.115070431146748
-  },
-  {
-    "config": {
-      "use_shooting": true,
-      "use_free_throws": false,
-      "use_rebounding": true,
-      "use_turnovers": true,
-      "use_defense": true,
-      "use_playmaking": true,
-      "use_win_history": false,
-      "n_estimators": 200,
-      "learning_rate": 0.05,
-      "max_depth": 2
-    },
-    "log_loss": 21.611394890887922
-  },
-  {
-    "config": {
-      "use_shooting": true,
-      "use_free_throws": false,
-      "use_rebounding": true,
-      "use_turnovers": true,
-      "use_defense": true,
-      "use_playmaking": true,
-      "use_win_history": false,
-      "n_estimators": 200,
-      "learning_rate": 0.03,
-      "max_depth": 2
-    },
-    "log_loss": 21.55296299262234
-  },
-  {
-    "config": {
-      "use_shooting": true,
-      "use_free_throws": false,
-      "use_rebounding": true,
-      "use_turnovers": true,
-      "use_defense": true,
-      "use_playmaking": true,
-      "use_win_history": false,
-      "n_estimators": 200,
-      "learning_rate": 0.01,
-      "max_depth": 2
-    },
-    "log_loss": 17.24635413181723
-  },
-  {
-    "config": {
-      "use_shooting": true,
-      "use_free_throws": false,
-      "use_rebounding": true,
-      "use_turnovers": true,
-      "use_defense": true,
-      "use_playmaking": true,
-      "use_win_history": false,
-      "n_estimators": 200,
-      "learning_rate": 0.01,
-      "max_depth": 3
-    },
-    "log_loss": 16.984664165866956
-  },
-  {
-    "config": {
-      "use_shooting": true,
-      "use_free_throws": false,
-      "use_rebounding": true,
-      "use_turnovers": true,
-      "use_defense": true,
-      "use_playmaking": true,
-      "use_win_history": false,
-      "n_estimators": 200,
-      "learning_rate": 0.01,
-      "max_depth": 4
-    },
-    "log_loss": 18.825838602712572
-  },
-  {
-    "config": {
-      "use_shooting": true,
-      "use_free_throws": false,
-      "use_rebounding": true,
-      "use_turnovers": true,
-      "use_defense": true,
-      "use_playmaking": true,
-      "use_win_history": false,
-      "n_estimators": 200,
-      "learning_rate": 0.01,
-      "max_depth": 3
-    },
-    "log_loss": 18.097873477540766
-  },
-  {
-    "config": {
-      "use_shooting": true,
-      "use_free_throws": false,
-      "use_rebounding": true,
-      "use_turnovers": true,
-      "use_defense": true,
-      "use_playmaking": true,
-      "use_win_history": false,
-      "n_estimators": 200,
-      "learning_rate": 0.01,
-      "max_depth": 3
-    },
-    "log_loss": 16.984664165866956
-  },
-  {
-    "config": {
-      "use_shooting": true,
-      "use_free_throws": false,
-      "use_rebounding": true,
-      "use_turnovers": true,
-      "use_defense": true,
-      "use_playmaking": true,
-      "use_win_history": false,
-      "n_estimators": 200,
-      "learning_rate": 0.01,
-      "max_depth": 3
-    },
-    "log_loss": 15.565487301263813
-  },
-  {
-    "config": {
-      "use_shooting": true,
-      "use_free_throws": false,
-      "use_rebounding": true,
-      "use_turnovers": true,
-      "use_defense": true,
-      "use_playmaking": true,
-      "use_win_history": false,
-      "n_estimators": 200,
-      "learning_rate": 0.01,
-      "max_depth": 3,
-      "seed": 42,
-      "sample_size": 20000
-    },
-    "log_loss": 21.60214667677395
-  },
-  {
-    "config": {
-      "use_shooting": true,
-      "use_free_throws": false,
-      "use_rebounding": true,
-      "use_turnovers": true,
-      "use_defense": true,
-      "use_playmaking": true,
-      "use_win_history": false,
-      "n_estimators": 100,
-      "learning_rate": 0.01,
-      "max_depth": 3,
-      "seed": 42,
-      "sample_size": 20000
-    },
-    "log_loss": 1.0921887030008617
-  },
-  {
-    "config": {
-      "use_shooting": true,
-      "use_free_throws": false,
-      "use_rebounding": true,
-      "use_turnovers": true,
-      "use_defense": true,
-      "use_playmaking": true,
-      "use_win_history": false,
-      "n_estimators": 100,
       "learning_rate": 0.01,
       "max_depth": 5,
       "seed": 42,
       "sample_size": 20000
     },
-    "log_loss": 2.0781731549436913
+    "log_loss": 21.71237808078232
+  },
+  {
+    "config": {
+      "use_shooting": true,
+      "use_free_throws": false,
+      "use_rebounding": true,
+      "use_turnovers": true,
+      "use_defense": true,
+      "use_playmaking": true,
+      "use_win_history": true,
+      "n_estimators": 200,
+      "learning_rate": 0.01,
+      "max_depth": 5,
+      "seed": 42,
+      "sample_size": 20000
+    },
+    "log_loss": 20.53945783589125
   },
   {
     "config": {
@@ -224,13 +59,13 @@
       "use_defense": true,
       "use_playmaking": true,
       "use_win_history": false,
-      "n_estimators": 100,
+      "n_estimators": 200,
       "learning_rate": 0.01,
-      "max_depth": 3,
+      "max_depth": 5,
       "seed": 42,
       "sample_size": 20000
     },
-    "log_loss": 1.0921887030008617
+    "log_loss": 21.973675752231625
   },
   {
     "config": {
@@ -240,14 +75,14 @@
       "use_turnovers": true,
       "use_defense": true,
       "use_playmaking": true,
-      "use_win_history": false,
-      "n_estimators": 100,
+      "use_win_history": true,
+      "n_estimators": 200,
       "learning_rate": 0.01,
-      "max_depth": 3,
+      "max_depth": 5,
       "seed": 42,
       "sample_size": 20000
     },
-    "log_loss": 1.0921887030008617
+    "log_loss": 20.53945783589125
   },
   {
     "config": {
@@ -257,14 +92,14 @@
       "use_turnovers": true,
       "use_defense": true,
       "use_playmaking": true,
-      "use_win_history": false,
-      "n_estimators": 100,
+      "use_win_history": true,
+      "n_estimators": 200,
       "learning_rate": 0.01,
       "max_depth": 3,
       "seed": 42,
       "sample_size": 20000
     },
-    "log_loss": 1.0921887030008617
+    "log_loss": 23.115070431146748
   },
   {
     "config": {
@@ -274,14 +109,14 @@
       "use_turnovers": true,
       "use_defense": true,
       "use_playmaking": true,
-      "use_win_history": false,
-      "n_estimators": 100,
+      "use_win_history": true,
+      "n_estimators": 200,
       "learning_rate": 0.01,
-      "max_depth": 3,
+      "max_depth": 5,
       "seed": 42,
       "sample_size": 20000
     },
-    "log_loss": 1.0921887030008617
+    "log_loss": 20.53945783589125
   },
   {
     "config": {
@@ -291,14 +126,14 @@
       "use_turnovers": true,
       "use_defense": true,
       "use_playmaking": true,
-      "use_win_history": false,
-      "n_estimators": 100,
+      "use_win_history": true,
+      "n_estimators": 200,
       "learning_rate": 0.01,
-      "max_depth": 3,
+      "max_depth": 5,
       "seed": 42,
       "sample_size": 20000
     },
-    "log_loss": 1.0921887030008617
+    "log_loss": 20.53945783589125
   },
   {
     "config": {
@@ -308,14 +143,14 @@
       "use_turnovers": true,
       "use_defense": true,
       "use_playmaking": true,
-      "use_win_history": false,
-      "n_estimators": 100,
+      "use_win_history": true,
+      "n_estimators": 200,
       "learning_rate": 0.01,
-      "max_depth": 3,
+      "max_depth": 5,
       "seed": 42,
       "sample_size": 20000
     },
-    "log_loss": 1.0921887030008617
+    "log_loss": 20.53945783589125
   },
   {
     "config": {
@@ -325,13 +160,47 @@
       "use_turnovers": true,
       "use_defense": true,
       "use_playmaking": true,
-      "use_win_history": false,
+      "use_win_history": true,
       "n_estimators": 100,
-      "learning_rate": 0.01,
-      "max_depth": 3,
+      "learning_rate": 0.03,
+      "max_depth": 5,
       "seed": 42,
       "sample_size": 20000
     },
-    "log_loss": 1.0921887030008617
+    "log_loss": 22.29878893699119
+  },
+  {
+    "config": {
+      "use_shooting": true,
+      "use_free_throws": false,
+      "use_rebounding": true,
+      "use_turnovers": true,
+      "use_defense": true,
+      "use_playmaking": true,
+      "use_win_history": true,
+      "n_estimators": 200,
+      "learning_rate": 0.01,
+      "max_depth": 5,
+      "seed": 42,
+      "sample_size": 20000
+    },
+    "log_loss": 20.53945783589125
+  },
+  {
+    "config": {
+      "use_shooting": true,
+      "use_free_throws": false,
+      "use_rebounding": true,
+      "use_turnovers": true,
+      "use_defense": true,
+      "use_playmaking": true,
+      "use_win_history": true,
+      "n_estimators": 200,
+      "learning_rate": 0.01,
+      "max_depth": 5,
+      "seed": 42,
+      "sample_size": 20000
+    },
+    "log_loss": 20.53945783589125
   }
 ]

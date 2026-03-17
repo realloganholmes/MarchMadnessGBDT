@@ -114,11 +114,29 @@ probs = gbt.predict(X)
 df["T1_Win_Prob"] = probs
 df["T2_Win_Prob"] = 1 - probs
 
+import json
+
 # =========================
-# SAVE
+# FORMAT OUTPUT
 # =========================
 
-df.to_csv(OUTPUT_FILE, index=False)
+output = []
+
+for _, row in df.iterrows():
+    output.append({
+        "team1": row["TeamName_T1"],
+        "team2": row["TeamName_T2"],
+        "team1WinProb": round(row["T1_Win_Prob"] * 100, 2)  # convert to %
+    })
+
+# =========================
+# SAVE JSON
+# =========================
+
+OUTPUT_FILE = "matchup_predictions.json"
+
+with open(OUTPUT_FILE, "w") as f:
+    json.dump(output, f, indent=2)
 
 print(f"Saved predictions → {OUTPUT_FILE}")
-print(df[["TeamName_T1","TeamName_T2","T1_Win_Prob"]].head())
+print(output[:5])
