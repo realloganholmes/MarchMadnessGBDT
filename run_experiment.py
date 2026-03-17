@@ -151,7 +151,13 @@ def run_experiment(config):
         max_depth=config["max_depth"],
     )
 
+    import pickle
+
     gbt.fit(X_train, y_train)
+
+    # ✅ SAVE MODEL HERE
+    with open("gbdt_model.pkl", "wb") as f:
+        pickle.dump(gbt, f)
 
     predictions = gbt.predict(X_test)
 
@@ -169,17 +175,19 @@ if __name__ == "__main__":
 
         # feature families
         "use_shooting": True,
-        "use_free_throws": True,
+        "use_free_throws": False,
         "use_rebounding": True,
         "use_turnovers": True,
         "use_defense": True,
         "use_playmaking": True,
-        "use_win_history": True,
+        "use_win_history": False,
 
         # model params
         "n_estimators": 100,
-        "learning_rate": 0.05,
+        "learning_rate": 0.01,
         "max_depth": 3,
+        "seed": 3124,
+        "sample_size": 10000
     }
 
     print(run_experiment(config))
